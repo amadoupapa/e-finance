@@ -1,0 +1,28 @@
+<div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Formulaire de Blocage Transaction
+          </div>
+          <div class="card-body">
+            <form  (submit)="bloquer()">
+              <div class="form-group">
+                <label for="numeroCompte">Numéro de la transaction</label>
+                <input type="text" class="form-control" name="numTransaction" id="numeroTransaction" [(ngModel)]="numTransaction" required=""  placeholder="Entrez le numéro de la trqnsaction">
+              </div>
+              <div class="form-group">
+                <label for="montant">Compte Expediteur</label>
+                <input type="text" class="form-control" id="montant" name="expediteur" placeholder="Expediteur" readonly>
+              </div>
+              <div class="form-group">
+                <label for="montant">Compte Beneficiaire</label>
+                <input type="text" class="form-control" id="montant" name="beneficiaire" placeholder="Beneficiaire" readonly>
+              </div>
+              <button type="submit" class="btn btn-primary">Soumettre</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

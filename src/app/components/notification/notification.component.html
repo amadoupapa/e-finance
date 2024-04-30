@@ -1,0 +1,4 @@
+
+    <div *ngIf="notification$ | async as notification" class="alert alert-info notification d-flex justify-content-between" role="alert">
+        {{notification}} <i (click)="hideNotification()" class="fas fa-times"></i>
+      </div>

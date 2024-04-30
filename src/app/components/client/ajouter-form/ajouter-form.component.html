@@ -1,0 +1,32 @@
+<div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Formulaire d'Inscription de Client
+          </div>
+          <div class="card-body">
+            <form [formGroup]="ajouterForm" (submit)="createClient()">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" class="form-control" formControlName="nom" id="nom" placeholder="Entrez le nom du client">
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" class="form-control" formControlName="prenom" id="prenom" placeholder="Entrez le prénom du client">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" formControlName="email" id="email" placeholder="Entrez l'email du client">
+                </div>
+                <div class="form-group">
+                    <label for="motDePasse">Mot de passe</label>
+                    <input type="password" class="form-control" formControlName="motDePasse" id="motDePasse" placeholder="Entrez le mot de passe du client">
+                </div>
+              <button type="submit" class="btn btn-primary">Soumettre</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

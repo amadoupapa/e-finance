@@ -1,0 +1,9 @@
+<h2 class="heading">Gestion Transaction</h2>
+<nav class="navbar navbar-light justify-content-center">
+  <app-sub-nav
+    *ngFor="let l of listNav"
+    navPath="{{ l.menuPath }}"
+    buttonName="{{ l.buttonName }}"
+  ></app-sub-nav>
+</nav>
+<router-outlet></router-outlet>
