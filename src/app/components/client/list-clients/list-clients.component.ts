@@ -1,5 +1,5 @@
 import { NgFor } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { fakeUsers } from '../../../fake';
 import { Utilisateur } from '../../../models/user.model';
 
@@ -12,6 +12,8 @@ import { Utilisateur } from '../../../models/user.model';
 })
 export class ListClientsComponent implements OnInit{
   clients!:Utilisateur[];
+  @Input()
+  idClient!:Number;
   ngOnInit(): void {
     this.clients = fakeUsers;
 }

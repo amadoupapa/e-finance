@@ -10,6 +10,8 @@ import { ClientComponent } from './pages/client/client.component';
 import { AjouterFormComponent } from './components/client/ajouter-form/ajouter-form.component';
 import { ModifierFormComponent } from './components/client/modifier-form/modifier-form.component';
 import { ListClientsComponent } from './components/client/list-clients/list-clients.component';
+import { DeblocageComponent } from './components/client/deblocage/deblocage.component';
+import { BlocageComponent } from './components/client/blocage/blocage.component';
 
 export const routes: Routes = [
   {
@@ -39,6 +41,14 @@ export const routes: Routes = [
       {
         path: 'modification',
         component: ModifierFormComponent,
+      },
+      {
+        path: 'blocage',
+        component: BlocageComponent,
+      },
+      {
+        path: 'deblocage',
+        component: DeblocageComponent,
       },
     ],
   },

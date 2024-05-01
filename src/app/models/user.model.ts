@@ -4,6 +4,7 @@ export interface Utilisateur {
     nom: string;
     prenom:string;
     email: string;
+    statut:string;
     motDePasse: string;
    
 }

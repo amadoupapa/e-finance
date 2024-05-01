@@ -1,0 +1,29 @@
+<div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Formulaire de Deblocage de Client
+          </div>
+          <div class="card-body">
+            <form  (submit)="debloquer()">
+              <div class="form-group">
+                <label for="numeroCompte">Numéro Client</label>
+                <input type="text" class="form-control" name="numeroClient" id="numeroTransaction" [(ngModel)]="numClient" required=""  placeholder="Entrez le numéro du client">
+              </div>
+              <div class="form-group">
+                <label for="numeroCompte">Nom Client</label>
+                <input type="text" class="form-control" name="nomClient" id="numeroTransaction" [(ngModel)]="nomClient" readonly>
+              </div>
+              <div class="form-group">
+                <label for="numeroCompte">Statut</label>
+                <input type="text" class="form-control" name="statut" id="statut" [(ngModel)]="statut" readonly>
+              </div>
+              
+              <button type="submit" class="btn btn-danger">Bloquer</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
